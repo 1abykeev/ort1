@@ -101,6 +101,7 @@
             <div class="toggle-header">Course Content</div>
             <div class="toggle-content course-content">
                 <p><span>1. Topic:</span> Fractions</p>
+                <iframe src="https://drive.google.com/file/d/1EHSOmb2P_msMjckiKIJHSZrRBPO95Gn5/preview" width="600" height="480"></iframe>
                 <p><span>2. Topic:</span> Powers and Exponents</p>
                 <p><span>3. Topic:</span> Algebra Basics</p>
                 <p><span>4. Topic:</span> Geometry Foundations</p>
