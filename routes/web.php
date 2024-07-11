@@ -31,3 +31,4 @@ Route::get('edit/{id}', [ProfileController::class, 'editUserInfo']);
 
 Route::put('update-data/{id}', [ProfileController::class, 'updateUserInfo']);
 
+

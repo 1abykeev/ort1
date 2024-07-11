@@ -33,7 +33,7 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
-        input[type="text"], input[type="email"] {
+        input[type="text"], input[type="email"], input[type="password"] {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -71,7 +71,7 @@
             </div>
         @endif
 
-        <form action="{{url('update-data/'.$user->id) }}" method="POST">
+        <form action="{{ url('update-data/'.$user->id) }}" method="POST">
             @csrf
             @method('PUT')
 
@@ -127,6 +127,30 @@
                 <label for="location">Location:</label>
                 <input type="text" name="location" id="location" value="{{ $user->location }}" required>
                 @error('location')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="form-group">
+                <label for="current_password">Current Password:</label>
+                <input type="password" name="current_password" id="current_password">
+                @error('current_password')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="form-group">
+                <label for="password">New Password:</label>
+                <input type="password" name="password" id="password">
+                @error('password')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation">Confirm New Password:</label>
+                <input type="password" name="password_confirmation" id="password_confirmation">
+                @error('password_confirmation')
                     <div class="error">{{ $message }}</div>
                 @enderror
             </div>
