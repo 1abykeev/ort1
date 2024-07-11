@@ -94,6 +94,7 @@
                 <p><strong>Number:</strong> {{ $user->number }}</p>
                 <p><strong>School:</strong> {{ $user->school }}</p>
                 <p><strong>Location:</strong> {{ $user->location }}</p>
+                <a href="{{ url('edit/'.$user->id)}}" class="logout-btn">Edit</a>
             </div>
         </div>
 
